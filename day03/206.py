@@ -39,6 +39,8 @@ class Solution:
         return pre
     
 # Recursion
+# Key Note:
+# 1. Dont forget the base case curr == None
 
 # Definition for singly-linked list.
 # class ListNode:

@@ -26,3 +26,22 @@ class Solution:
             fast = fast.next
         slow.next = slow.next.next
         return dummy.next
+    
+# without dummy, we need to handle head separately
+
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        fast = head.next
+        slow = head
+        
+        for i in range(n):
+            if fast is None:  # delete head node
+                return head.next
+            fast = fast.next
+        
+        while fast:
+            slow = slow.next
+            fast = fast.next
+        
+        slow.next = slow.next.next
+        return head

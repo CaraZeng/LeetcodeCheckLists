@@ -32,15 +32,23 @@ class Solution:
 
 # Recursion
 # More Key Note:
-# 1. After swap two nodes in on pair, we need to swap the next two nodes, 
+# 1. if head == None or head.next == None:
+#        return head 
+# this is not only the edge cases. because if we call the swapPairs recursively,
+# there will always be some new head(next), and we need to check that if there
+# any needs to swap again(like only one number or no number left), so is also a base case
+# 2. After swap two nodes in on pair, we need to swap the next two nodes, 
 # then we can make pre.next the rest of nodes.
 # pre.next = self.swapPairs(next)
 #  is actually equals to
 # result = self.swapPairs(next)
 # pre.next = result
-# 2. we keep calling swapPairs itself until the end and then end end one call
+# 3. we keep calling swapPairs itself until the end and then end end one call
 # returns and the connections happen from the end. And then return happens and
 # connection happend.
+# 4. In the end we return curr is because after all swaps, the first pair's curr will
+# become the first node. swaps happens immediately but connection happens when all 
+# swaps are done and connection begins from end to start
 
 # Definition for singly-linked list.
 # class ListNode:
