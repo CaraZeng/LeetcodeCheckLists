@@ -18,7 +18,7 @@ class Solution:
         loop, mid = n // 2, n // 2
         count, offset = 1, 1
         while loop > 0:
-            i, j = start_x, start_y
+            i, j = start_x, start_y # can be delete because define it in for loop
             for j in range(start_y, n - offset):
                 nums[start_x][j] = count
                 count += 1

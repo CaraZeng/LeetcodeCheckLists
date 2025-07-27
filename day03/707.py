@@ -1,8 +1,17 @@
 # Design Linked List
 # Key Note:
 # 1. Need to create a ListNode class because we need to draw the linked List
-# by ourselves.
-# 2. need a size
+# by ourselves.(need to includes self, val, next). 
+# If we put ListNode into the LinkedList class, then the nodes will have the functions for LinkedList
+# its meaningless and wasteful
+# Also for the beauty of code, one class for one class.
+# 2. need to create the first node by calling init inside ListNode class
+# and we need a size
+# NOTICE:
+# in the init for ListNode, we dont need to specify the arguments, like
+# we can just __init__(self, val, next), but this means if we call ListNode
+# later we must provide the aeguments, because there are no default arguments.
+# When we create size in init of LinkedList, that's nothing about ListNode, dont mix that up.
 # 3. How to determind whether current = dummy or current = dummy.next?
 # If we want to look up sth, we need to start from the first valid node, which
 # is the one after dummy. If we want to make a change, we need the one node
