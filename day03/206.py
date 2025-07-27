@@ -9,6 +9,16 @@
 # Second is that when we at the first current, since the end of Linked List
 # is None, and we need to reverse the Linked List, so we need pre to be the 
 # None.
+# 3. Why we dont use dummy and make current = dummy?
+# Its not a regular change to Linked List and since dummy = ListNode()
+# that means dummy.next = None, and if current == dummy, that means current
+# == None
+# Here is one mistake i made. And we dont need to consider current.next because eventually
+# current would == None and thats ok.
+#    dummy = ListNode()           # 创建虚拟头节点
+#    pre = dummy                  # pre从虚拟节点开始
+#    current = pre.next           # current从虚拟节点的next开始
+#    while current and current.next:
 
 # Two Pointers
 
