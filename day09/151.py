@@ -80,7 +80,8 @@ class Solution:
 # Key Note:
 # 1. why if word != '': not if word != ' ':
 # because if char == ' ': we start to consider and append
-# so if is not ' ', we add to word. so word will never be a ' '
+# so if is not ' ', we add to word. so word will never has a ' '
+# and never be a ' '
 class Solution:
     def reverseWords(self, s: str) -> str:
         words = []
