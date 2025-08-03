@@ -6,7 +6,9 @@
 # pop out tail when value is > tail then append value to tail.
 # make sure the head is max and tail is min and queue is Monotonic.
 # every time we can return the max(head of queue) and save it to result.
-
+# 2. Why we need Monotonic Queue and return the front, not just use
+# get max?
+# get max actually will use for loop.
 from collections import deque
 
 class MyQueue:
