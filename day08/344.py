@@ -3,6 +3,8 @@
 # 1. If library can just solves the question, dont use it,
 # if its just a part of solution, we can use it.
 # 2. Changed in place so we dont need to return anything
+# 3. while is better than for, because if we use for, we need to calculate
+# the value and comapre it with len(s) // 2 every time.
 # Two Pointers while
 class Solution:
     def reverseString(self, s: List[str]) -> None:

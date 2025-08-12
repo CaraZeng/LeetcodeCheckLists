@@ -9,7 +9,6 @@
 # Since left = i + 1, and if in [x, y, z], x == y, is okay. So if we use
 # nums[i] == nums[i + 1], we might miss the pairs that nums[i] == nums[left].
 class Solution:
-
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         result = []
         nums.sort()
