@@ -3,6 +3,7 @@
 # Key Note:
 # 1. Very similar to 98, need to take advantage of the bianry search tree.(inorder traversal
 # left mid right so the value will be increase).
+# 2. Two pointers(one for prev one for curr)
 
 # Definition for a binary tree node.
 # class TreeNode:
