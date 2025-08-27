@@ -32,7 +32,13 @@ class Solution:
                 result.append(key)
         return result
     
-
+# Key Note:
+# 1. defind variables again in main function(reset) incase we need to second
+# use them.
+# 2.actually we dont need __init__, and because of the problem description, we 
+# wont use varaibles again, so neither we remove __init__ or varaible definition from
+# main function, it both works.
+# we do both of them just for the ood.
 # use the binary search tree
 # use prev and curr
 # Definition for a binary tree node.
@@ -73,6 +79,10 @@ class Solution:
         self.searchBST(curr.right)
         return
     def findMode(self, root: Optional[TreeNode]) -> List[int]:
+        self.maxCount = 0
+        self.count = 0
+        self.result = []
+        self.prev = None
         self.searchBST(root)
         return self.result
 
