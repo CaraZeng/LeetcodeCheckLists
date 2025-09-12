@@ -8,7 +8,8 @@
 # we divide them into more left and right subtrees, we iterate down the bottom
 # of that one tree when root is None, then we return the value from bottom.
 # in the process, if any one return -1, that means its not a balanced tree.
-
+# 3. we cant simply calculate height of left subtree of root and right subtree of root
+# because(see pic2)
 
 
 # Definition for a binary tree node.

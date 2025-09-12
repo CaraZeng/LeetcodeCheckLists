@@ -1,2 +1,3 @@
 # LeetcodeCheckLists
-My own checklist for leetcode
+My own checklist for leetcode.
+
